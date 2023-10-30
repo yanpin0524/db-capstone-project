@@ -1,0 +1,1 @@
+create view OrdersView as select orderID, quantity, totalCost from Orders where quantity > 2;
