@@ -14,8 +14,8 @@ BEGIN
     FROM Bookings
     WHERE date = booking_date AND tableNumber = table_number;
     
-    insert into Bookings (date, tableNumber, customerID)
-	values
+    INSERT INTO Bookings (date, tableNumber, customerID)
+	VALUES
 	(booking_date, table_number, customer_id);
     
     IF @booking_count > 0 THEN
